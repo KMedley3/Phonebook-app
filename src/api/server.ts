@@ -22,7 +22,7 @@ export const server_calls = {
     create: async (data: any = {}) => {
         const response = await fetch(`https://phonebook-8lqh.onrender.com/api/contacts`,
         {
-            method: 'GET',
+            method: 'POST',
             mode: "cors",
             headers: {
                 "Content-Type": "application/json",
@@ -45,7 +45,7 @@ export const server_calls = {
     update: async (id:string, data: any = {}) => {
         const response = await fetch(`https://phonebook-8lqh.onrender.com/api/contacts/${id}`,
         {
-            method: 'GET',
+            method: 'POST',
             mode: "cors",
             headers: {
                 "Content-Type": "application/json",
